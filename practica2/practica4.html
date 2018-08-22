@@ -1,0 +1,30 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script language="javascript">
+    function check(Frut)
+    {
+    document.formu.respuesta.value = Frut;
+    }
+
+    </script>
+  </head>
+  <body>
+    <form name="formu" id="formu">
+      <h1>¿Cual es tu fruta favorita?</h1> <br>
+      <input type="radio" name="Frut" onclick="check (this.value)"
+      value="Strawberry"> Strawberry <br>
+      <input type="radio" name="Frut" onclick="check (this.value)"
+      value="Watermelon"> Watermelon<br>
+      <input type="radio" name="Frut" onclick="check (this.value)"
+      value="Pineapple"> Pineapple<br>
+      <input type="radio" name="Frut" onclick="check (this.value)"
+      value="Pear"> Pear<br>
+<br>
+<input type="text" name="respuesta" size="20">
+
+    </form>
+
+  </body>
+</html>

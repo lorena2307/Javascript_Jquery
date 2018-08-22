@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <fieldset> <!--´Poner un margen-->
+      <legend>Calculadora basica</legend>
+      <h1>Calculadora</h1> <br><!--Titulo-->
+      <label for="">N1:</label><!--Nombre del campo-->
+       <input type="text" id="Numero1"><!--Asignamos id a las cajas de texto-->
+       <label for="">N2:</label><!--Nombre del campo-->
+       <input type="text" id="Numero2"><!--Asignamos id a las cajas de texto-->
+       <br><br>
+       <input type="button" onclick="sumar();" value="+"><!--Utilizamos input de tipo button-->
+       <input type="button" onclick="restar();" value="-"><!--Utilizamos input de tipo button-->
+       <input type="button" onclick="multiplicar();" value="*"><!--Utilizamos input de tipo button-->
+       <input type="button" onclick="dividir();" value="/"><!--Utilizamos input de tipo button-->
+  </fieldset>
+<!--en la inclusion del script se realizo las operaciones arirmticas , creandolas funciones de sumar, restar,multiplicar,dividir dentro de cada funciones
+se decalrando dos variables de tipo var para guardar los datos que se obtienen de los datos de texto de los cajas de texto del Numero1 y Numero2 que son las id que asignamos,
+se guardo en una variable mas llamada suma en la que guarda el resultado obtenido de las operciones, convirtiendo los datos en entero -->
+  <script language="javascript">
+
+
+  function sumar()
+  {
+    var n1=document.getElementById('Numero1').value;
+    var n2=document.getElementById('Numero1').value;
+    var suma = parseInt(n1)+parseInt(n2);
+    alert("La suma de los numeros es " + suma );
+
+  }
+  function restar()
+  {
+  var n1=document.getElementById('Numero1').value;
+  var n2=document.getElementById('Numero1').value;
+  var resta = parseInt(n1)-parseInt(n2);
+  alert("La resta de los numeros es " + resta );
+}
+function multiplicar()
+{
+var n1=document.getElementById('Numero1').value;
+var n2=document.getElementById('Numero1').value;
+var multiplicacion= parseInt(n1)*parseInt(n2);
+alert("La multiplicacion de los numeros es " + multiplicacion );
+}
+function dividir()
+{
+var n1=document.getElementById('Numero1').value;
+var n2=document.getElementById('Numero1').value;
+var divicion= parseInt(n1)/parseInt(n2);
+alert("La divición de los numeros es " + divicion );
+}
+
+  </script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Encuesta</title>
+    <style media="screen">
+
+    select{
+      width: 200px;
+      height: 30px;
+      text-align: center;
+      color: black;
+    }
+    .resultado{
+
+      width: 400px;
+      height: 30px;
+      color: blue;
+    }
+
+    </style>
+  </head>
+  <body>
+      <h1>Encuesta</h1>
+      <form id="creadores">
+  <label for="">
+    ¿Quien es el creador de facebook? <br>
+     <select id="opciones">
+         <option value="Jan Koum y Brian Acton">Jan Koum y Brian Acton</option>
+         <option value=" Garret Camp, Travis Kalanick">Garret Camp, Travis Kalanick</option>
+         <option value="Mark Elliot Zuckerberg">Mark Elliot Zuckerberg</option>
+         <option value="Bobby Murphy y Evan Spiegel">Bobby Murphy y Evan Spiegel</option>
+    </select>
+    </label> <br>
+    <div id="resstt" class="resultado"></div>
+<hr>
+   <label for="">
+     ¿En que año fue creado Facebook?<br>
+      <select id="opciones2">
+          <option value="2000">2000</option>
+          <option value="1995">1995</option>
+          <option value="2004">2004</option>
+          <option value="2016">2016</option>
+      </select>
+      </label> <br>
+      <div id="ress" class="resultado"></div>
+<hr>
+<label for="">
+  ¿Quien descubrio America?<br>
+   <select id="opciones3">
+       <option value="Cristobal Colon">Cristobal Colon</option>
+       <option value="Paco el chato">Paco el chato</option>
+       <option value="Memo Ochoa">Memo Ochoa</option>
+   </select>
+   </label> <br>
+   <div id="res" class="resultado" ></div>
+<hr>
+
+   <label for="">
+     ¿En que episodio de la vigésimo segunda temporada de Los Simpson aparecio Zuckerberg?<br>
+      <select id="opciones4">
+          <option value="4° episodio">4° episodio</option>
+          <option value="7° episodio">7° episodio</option>
+          <option value="2° episodio">2° episodio</option>
+      </select>
+    </label> <br>
+    <div id="resu" class="resultado"></div>
+    <hr>
+    <label for="">
+      ¿Cuantos meses tiene el año?<br>
+      <select id="opciones5">
+          <option value="6 meses">6 meses</option>
+          <option value="9 meses">9 meses</option>
+          <option value="12 meses">12 meses</option>
+      </select>
+     </label> <br>
+     <div id="resul" class="resultado"></div>
+     <hr>
+     <label for="">
+       ¿Cuantos dias tiene la semana?<br>
+       <select id="opciones6">
+           <option value="4 dias">4 dias</option>
+           <option value="7 dias">7 dias</option>
+           <option value="2 dias">2 dias</option>
+       </select>
+      </label> <br>
+      <div id="result" class="resultado"></div>
+      <hr>
+<button type="submit">Check Answer</button>
+
+</form>
+
+
+
+<script src="js/jquery-3.3.1.min.js" type="text/javascript">
+</script>
+
+<script>
+$("#creadores").on("submit", function(event){
+  event.preventDefault();
+  var $cues1 = $("#opciones");
+  var cues1 =$cues1.val();
+  console.log(cues1);
+   if (cues1 === "Mark Elliot Zuckerberg") {
+     $("#resstt").text("Is True");
+   }else {
+     $("#resstt").text("Is False");
+   }
+});
+
+$("#creadores").on("submit", function(event){
+  event.preventDefault();
+var $cues1 = $("#opciones2");
+var cues1 =$cues1.val();
+console.log(cues1);
+ if (cues1 === "2004") {
+   $("#ress").text("Is True");
+ }else {
+   $("#ress").text("Is False");
+ }
+});
+
+$("#creadores").on("submit", function(event){
+  event.preventDefault();
+var $cues1 = $("#opciones3");
+var cues1 =$cues1.val();
+console.log(cues1);
+ if (cues1 === "Cristobal Colon") {
+   $("#res").text("Is True");
+ }else {
+   $("#res").text("Is False");
+ }
+});
+
+$("#creadores").on("submit", function(event){
+  event.preventDefault();
+var $cues1 = $("#opciones4");
+var cues1 =$cues1.val();
+console.log(cues1);
+ if (cues1 === "2° episodio") {
+   $("#resu").text("Is True");
+ }else {
+   $("#resu").text("Is False");
+ }
+});
+$("#creadores").on("submit", function(event){
+  event.preventDefault();
+var $cues1 = $("#opciones5");
+var cues1 =$cues1.val();
+console.log(cues1);
+ if (cues1 === "12 meses") {
+   $("#resul").text("Is True");
+ }else {
+   $("#resul").text("Is False");
+ }
+});
+$("#creadores").on("submit", function(event){
+  event.preventDefault();
+var $cues1 = $("#opciones6");
+var cues1 =$cues1.val();
+console.log(cues1);
+ if (cues1 === "7 dias") {
+   $("#result").text("Is True");
+ }else {
+   $("#result").text("Is False");
+ }
+});
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <!-- Elabore un programa que determine, dados tres lados de un triangulo, lado a, lado b, lado c, la clasificacion de este en equitaltero,isoceles o escaleno.
+  -->
+    <script type="text/javascript">
+    let ladoa;
+    let ladob;
+    let ladoc;
+    ladoa=prompt("Dijite el Primer numero","Escriba aqui")
+    ladob=prompt("Dijite el segundo numero","Escriba aqui")
+    ladoc=prompt("Dijite el tercer numero","Escriba aqui")
+
+
+    if (ladoa==ladob && ladob== ladoc) {
+      alert("EL triangulo es EquiLatero")
+    }else{
+    if(ladoa==ladob ||ladoa==ladoc || ladob==ladoc){
+    alert("El triangulo es Isosoles")
+    }else
+    if(ladoa!=ladob || ladob!==ladoa || ladoc!=ladob){
+    alert(" El triangulo es Escaleno")
+    }}
+
+    </script>
+  </body>
+</html>
